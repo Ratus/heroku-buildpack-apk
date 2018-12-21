@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+##!/usr/bin/env bash
+## bin/compile <build-dir> <cache-dir>
+#
+## fail fast
+## set -e
+#
+## debug
+## set -x
+#
+## parse and derive params
+#BUILD_DIR=$1
+#CACHE_DIR=$2
+#LP_DIR=`cd $(dirname $0); cd ..; pwd`
+#
+#function error() {
+#  echo " !     $*" >&2
+#  exit 1
+#}
+#
+#function topic() {
+#  echo "-----> $*"
+#}
+#
+#function indent() {
+#  c='s/^/       /'
+#  case $(uname) in
+#    Darwin) sed -l "$c";;
+#    *)      sed -u "$c";;
+#  esac
+#}
+#
+## Ensure we're running edge
+#mkdir -p /etc/apk
+#echo "http://dl-cdn.alpinelinux.org/alpine/edge/main"      | tee    /etc/apk/repositories
+#echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" | tee -a /etc/apk/repositories
+#echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing"   | tee -a /etc/apk/repositories
+#
+## Update package cache
+#apk update | indent
+#
+## Update all packages
+#apk upgrade | indent
+#
+## Install user-defined packages
+#while read line; do
+#  apk add "$line"
+#done <"$BUILD_DIR/Apkfile"
+#
+##done

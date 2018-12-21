@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+##!/usr/bin/env bash
+## bin/detect <build-dir>
+#
+#if [ -f $1/Apkfile ]; then
+#  echo "Apk" && exit 0
+#else
+#  echo "no" && exit 1
+#fi
